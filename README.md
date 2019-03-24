@@ -17,15 +17,15 @@ significantly higher after the stimulus (condition 1) in the anterior (left) and
 -----
 
 Inputs  
-- responseHits is a h x w x t1 matrix (3D) of images from condition 1. hxw is the height and width of image. t1 is the number of trials.  
-- videosMisses is a h x w x t2 matrix (3D) of images from condition 2. t2 is the number of trials and does not need to be equal to t1.
+- responseHits is a h x w x t1 matrix (3D) of images from condition 1. hxw is the height and width of image. t1 is the number of images.  
+- videosMisses is a h x w x t2 matrix (3D) of images from condition 2. t2 is the number of images and does not need to be equal to t1.
 - nIterations is the number of iterations for the permutations test (default 1000).
 
 Outputs  
 
 adm is a structure containing the following:
 - adm.map is the map of activity difference.  
-- adm.pmap is the p-value estimate per pixel. (note: adjacent pixels with p<alpha could belong to different clusters because the adm value is opposite sign.)  
+- adm.pmap is the p-value estimate per pixel.  
 - adm.nPixelsPval is the p-value associated with the total number of pixels with significant difference (compared with null distribution)  
 - adm.clusterSizePvals is the p-value associated with the size of each cluster (in pixels)  
 - adm.clusterMassPvals is the p-value associated with the mass of each cluster  
