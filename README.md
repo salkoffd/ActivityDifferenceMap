@@ -16,9 +16,9 @@ significantly higher after the stimulus (condition 1) in the anterior (left) and
 **Usage**
 -----
 
-You can run this by doing:
+You can run this by entering:
 
-    ActivityDifferenceMap(responseHits, responseMisses, nIterations)
+    adm = ActivityDifferenceMap(responseHits, responseMisses, nIterations)
 
 Inputs  
 - responseHits is a h x w x t1 matrix (3D) of images from condition 1. hxw is the height and width of image. t1 is the number of images.  
