@@ -1,11 +1,12 @@
 function [adm] = ActivityDifferenceMap( responseHits, responseMisses, nIterations)
-%Function by David Salkoff dovsalkoff@gmail.com
-%ActivityDifferenceMap Calculate difference between two trial types on a
-%pixel-by-pixel basis. Calculate significance of pixels and clusters with a
-%permutation test (does not assume gaussian distribution of data). Clusters
-%contain pixels with p<alpha (default 0.05) and which all have the same
-%sign in the activity difference map i.e. clusters can either be negative
-%or positive sign but cannot contain pixels of both sign.
+% [adm] = ActivityDifferenceMap( responseHits, responseMisses, nIterations)
+% ActivityDifferenceMap Calculate difference between two trial types on a
+% pixel-by-pixel basis. Calculate significance of pixels and clusters with a
+% permutation test (does not assume gaussian distribution of data). Clusters
+% contain pixels with p<alpha (default 0.05) and which all have the same
+% sign in the activity difference map i.e. clusters can either be negative
+% or positive sign but cannot contain pixels of both sign.
+% Written by David Salkoff dovsalkoff@gmail.com
 %
 %   Outputs
 %   adm is a structure containing the following:
