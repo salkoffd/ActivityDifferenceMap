@@ -6,7 +6,7 @@ function [adm] = ActivityDifferenceMap( responseHits, responseMisses, nIteration
 %contain pixels with p<alpha (default 0.05) and which all have the same
 %sign in the activity difference map i.e. clusters can either be negative
 %or positive sign but cannot contain pixels of both sign.
-
+%
 %   Outputs
 %   adm is a structure containing the following:
 %   adm.map is the map of activity difference.
@@ -16,7 +16,7 @@ function [adm] = ActivityDifferenceMap( responseHits, responseMisses, nIteration
 %   adm.clusterMassPvals is the p-value associated with the mass of each cluster
 %   adm.clustersSigPos is a logical map showing where positive sign clusters are (Hit trial activity significantly larger than Miss trial activity)
 %   adm.clustersSigPos is a logical map showing where negative sign clusters are (Hit trial activity significantly smaller than Miss trial activity)
-
+%
 %   Inputs
 %   responseHits is a h x w x t matrix (3D) of hit trial responses (or
 %   false-alarms). hxw is the height and width of image. t is the trial
